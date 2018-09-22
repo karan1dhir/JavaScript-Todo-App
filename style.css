@@ -1,0 +1,9 @@
+.completed{
+    text-decoration: line-through;
+}
+.arrow-btn:hover{
+    cursor: pointer;
+}
+.incompleted{
+    text-decoration: none;
+}
