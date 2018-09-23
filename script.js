@@ -63,7 +63,7 @@ let sortbtn = this.document.getElementById('btn-sort')
     downbtn.addEventListener("click",function(event){
       moveTaskDown(event)
     })
-
+  }
     sortbtn.onclick = function(){
       
       let newTaskList = document.createElement('ul')
@@ -116,7 +116,7 @@ let sortbtn = this.document.getElementById('btn-sort')
         toggleTask(event)
       })
 
-      
+         
        item.classList.add('list-group-item')
        item.children[0].checked = true
        item.classList.add('completed')
@@ -126,7 +126,8 @@ let sortbtn = this.document.getElementById('btn-sort')
        document.body.lastElementChild.replaceChild(newTaskList,todoList)
        todoList = document.getElementById('list') 
     }
-  }   
+  
+    
     function toggleTask(event){
     
       if(event.target.checked){
